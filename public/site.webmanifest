@@ -1,0 +1,10 @@
+{
+  "name": "Overdrive IO",
+  "short_name": "Overdrive IO",
+  "description": "Operational software consulting and engineering — overdriveio.com",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050607",
+  "theme_color": "#0080ff",
+  "lang": "en"
+}

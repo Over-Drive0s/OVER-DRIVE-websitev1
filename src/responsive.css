@@ -1,0 +1,88 @@
+/* Responsive shell overrides — desktop frame rules in index.css stay unchanged. */
+
+html[data-site-layout='responsive'] body {
+  overflow: auto;
+  background: #050607;
+}
+
+html[data-site-layout='responsive'] #root {
+  min-height: 0;
+  height: auto;
+  background: #050607;
+}
+
+html[data-site-layout='responsive'] .site-shell {
+  min-height: 0;
+  min-width: 0;
+  height: auto;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  overflow: visible;
+  background: #050607;
+}
+
+html[data-site-layout='responsive'] .site-card {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 100dvh;
+  flex-shrink: 1;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+
+html[data-site-layout='responsive'] .site-card-inner {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100dvh;
+  overflow: visible;
+}
+
+html[data-site-layout='responsive'] .site-app-shell {
+  min-height: 100dvh;
+  height: auto;
+  flex: 1 1 auto;
+}
+
+html[data-site-layout='responsive'] #app-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: visible;
+  overscroll-behavior: auto;
+}
+
+html[data-site-layout='responsive'] #app-main > * {
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+}
+
+html[data-site-layout='responsive'] #app-main > * > * {
+  height: auto !important;
+  min-height: auto !important;
+  overflow: visible !important;
+}
+
+html[data-site-layout='responsive'] #app-main [class*='lg:min-h-'] {
+  min-height: auto !important;
+}
+
+html[data-site-layout='responsive'] #app-main section.h-full,
+html[data-site-layout='responsive'] #app-main section.min-h-0 {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+html[data-site-layout='responsive'] .site-card-inner > .relative.h-full {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+html[data-site-layout='responsive'] .site-card-inner > .relative.h-full > .h-full {
+  height: auto !important;
+  min-height: auto !important;
+}
